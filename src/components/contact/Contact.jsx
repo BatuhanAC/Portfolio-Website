@@ -13,11 +13,9 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm('service_vwyiaib', 'template_87abae8', form.current, '28VWOf7242fQfXUDn')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+
+    e.target.reset()
+    
   };
 
   return (
