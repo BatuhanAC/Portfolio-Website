@@ -1,2 +1,2 @@
-# my-website
-Portfolyomun bulunduğu websitem
+# Portfolio-Website
+React ile build ettiğim, portfolyomun bulunduğu statik websitem.
