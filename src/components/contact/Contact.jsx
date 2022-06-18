@@ -20,8 +20,8 @@ const Contact = () => {
 
   return (
     <section id='contact'>
-      <h5>Get in Touch</h5>
-      <h2>Contact Me</h2>
+      <h5>İletişim kuralım!</h5>
+      <h2>Bana Ulaşın</h2>
 
       <div className='container contact__container'>
         <div className='contact__links'>
@@ -29,27 +29,27 @@ const Contact = () => {
             <AiOutlineMail className='contact__icon'/>
             <h4>Email</h4>
             <h5>batuhan1.acar@gmail.com</h5>
-            <a href='mailto:batuhan1.acar@gmail.com' className='contact__send'>Send a message</a>
+            <a href='mailto:batuhan1.acar@gmail.com' className='contact__send'>Mesaj Yolla</a>
           </article>
           <article className='contact__link'>
             <RiMessengerLine className='contact__icon'/>
             <h4>Messenger</h4>
             <h5>baduhservices</h5>
-            <a href='https://m.me/batuhan.acar.505960' className='contact__send'>Send a message</a>
+            <a href='https://m.me/batuhan.acar.505960' className='contact__send'>Mesaj Yolla</a>
           </article>
           <article className='contact__link'>
             <FaWhatsapp className='contact__icon'/>
             <h4>WhatsApp</h4>
             <h5>+90507-173-5159</h5>
-            <a href='https://api.whatsapp.com/send?phone=905071735159' className='contact__send'>Send a message</a>
+            <a href='https://api.whatsapp.com/send?phone=905071735159' className='contact__send'>Mesaj Yolla</a>
           </article>
         </div>
 
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name='name' placeholder='Your Full Name' required/>
-          <input type="email" name='email' placeholder='Your Email' required/>
-          <textarea name='message' rows="7" placeholder='Your Message' required></textarea>
-          <button type='submit' className='btn btn-primary'>Send Message</button>
+          <input type="text" name='name' placeholder='Adınız' required/>
+          <input type="email" name='email' placeholder='Email Adresiniz' required/>
+          <textarea name='message' rows="7" placeholder='Mesajınız' required></textarea>
+          <button type='submit' className='btn btn-primary'>Mesaj Yolla</button>
         </form>
 
       </div>

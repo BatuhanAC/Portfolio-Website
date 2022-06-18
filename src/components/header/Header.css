@@ -26,6 +26,7 @@ header {
     position: absolute;
     left: 0rem;
     bottom: 3rem;
+    font-size: 1.2rem;
 }
 
 .header__socials::after {
@@ -44,7 +45,6 @@ header {
     margin-top: 2.3rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
-    padding: 3rem 1.5rem 1.5rem 1.5rem;
 }
 
 

@@ -42,8 +42,9 @@
 }
 
 .service__list-icon {
-    color: var(--color-primary);
+    color: gold;
     margin-top: 2px;
+    font-size: 1.5rem;
 }
 
 .service__list p {

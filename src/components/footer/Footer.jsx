@@ -10,13 +10,13 @@ const Footer = () => {
       <a href='#' className='footer__logo'>BADUH</a>
 
       <ul className='permalinks'>
-        <li><a href='#'>Home</a></li>
-        <li><a href='#about'>About</a></li>
-        <li><a href='#experience'>Experience</a></li>
-        <li><a href='#services'>Services</a></li>
-        <li><a href='#portfolio'>Portfolio</a></li>
-        <li><a href='#testimonials'>Testimonials</a></li>
-        <li><a href='#contact'>Contact</a></li>
+        <li><a href='#'>Başlangıç</a></li>
+        <li><a href='#about'>Hakkında</a></li>
+        <li><a href='#experience'>Tecrübe</a></li>
+        <li><a href='#services'>Servisler</a></li>
+        <li><a href='#portfolio'>Portfolyo</a></li>
+        <li><a href='#testimonials'>Yorumlar</a></li>
+        <li><a href='#contact'>İletişim</a></li>
       </ul>
 
       <div className='footer__socials'>
@@ -26,7 +26,7 @@ const Footer = () => {
       </div>
 
       <div className='footer__copyright'>
-        <small>&copy; BADUH, All rights reserved.</small>
+        <small>&copy; BADUH, tüm hakları saklıdır.</small>
       </div>
     </footer>
   )

@@ -9,7 +9,7 @@
     padding: 1.2rem;
     border-radius: 2rem;
     border: 3px solid transparent;
-    transition: var(--transition);
+    
 }
 
 .portfolio__item:hover {

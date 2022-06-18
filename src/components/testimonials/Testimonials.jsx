@@ -2,9 +2,6 @@ import React from 'react'
 import './Testimonials.css'
 
 import AVTR1 from '../../assets/avatar1.jpg'
-import AVTR2 from '../../assets/avatar2.jpg'
-import AVTR3 from '../../assets/avatar3.jpg'
-import AVTR4 from '../../assets/avatar4.jpg'
 
 import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -12,43 +9,33 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
+import { motion } from 'framer-motion';
 
 const data = [
   {
     id: 1,
-    avatarName: 'Ernest Achiever',
+    avatarName: 'Batuhan Acar',
     avatar: AVTR1,
     alt: 'Avatar One',
-    rewiev: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel mauris nisl. Nam tempus tortor sit amet turpis sollicitudin, vitae elementum mauris suscipit. Curabitur vitae venenatis lectus, eget malesuada diam. Ut tempus tincidunt turpis sed luctus.'
-  },
-  {
-    id: 2,
-    avatarName: 'Batuhan Acar',
-    avatar: AVTR2,
-    alt: 'Avatar Two',
-    rewiev: 'Maecenas vel mauris nisl. Nam tempus tortor sit amet turpis sollicitudin, vitae elementum mauris suscipit. Curabitur vitae venenatis lectus, eget malesuada diam. Ut tempus tincidunt turpis sed luctus.'
-  },
-  {
-    id: 3,
-    avatarName: 'Metehan Acar',
-    avatar: AVTR3,
-    alt: 'Avatar Three',
-    rewiev: 'Nam tempus tortor sit amet turpis sollicitudin, vitae elementum mauris suscipit. Curabitur vitae venenatis lectus, eget malesuada diam. Ut tempus tincidunt turpis sed luctus.'
-  },
-  {
-    id: 4,
-    avatarName: 'Veysel Acar',
-    avatar: AVTR4,
-    alt: 'Avatar Four',
-    rewiev: 'Curabitur vitae venenatis lectus, eget malesuada diam. Ut tempus tincidunt turpis sed luctus.'
+    rewiev: 'Umarım yakın zamanda müşterilerim olacak. :)'
   },
 ]
 
 const Testimonials = () => {
   return (
     <section id='testimonials'>
-      <h5>Review from clients</h5>
-      <h2>Testimonials</h2>
+      <motion.h5
+        initial= {{opacity:0}}
+        whileInView= {{opacity:1}}
+        transition= {{duration:1.5}}
+        viewport= {{once:true}}
+      >Müşterilerden</motion.h5>
+      <motion.h2
+        initial= {{opacity:0}}
+        whileInView= {{opacity:1}}
+        transition= {{duration:1.5, delay: 0.5}}
+        viewport= {{once:true}}
+      >Geri Dönüşler</motion.h2>
 
       <Swiper className='container testimonials__container'
       modules={[Pagination]}
@@ -59,13 +46,28 @@ const Testimonials = () => {
           data.map(({id, avatarName, avatar, alt, rewiev}) => {
             return(
               <SwiperSlide key={id} className='testimonial'>
-                <div className='client__avatar'>
+                <motion.div className='client__avatar'
+                  initial= {{opacity:0}}
+                  whileInView= {{opacity:1}}
+                  transition= {{duration:1.5}}
+                  viewport= {{once:true}}
+                >
                   <img src={avatar} alt={alt}/>
-                </div>
-                <h5 className='client__name'>{avatarName}</h5>
-                  <small className='client__review'>
+                </motion.div>
+                <motion.h5 className='client__name'
+                  initial= {{opacity:0}}
+                  whileInView= {{opacity:1}}
+                  transition= {{duration:1.5}}
+                  viewport= {{once:true}}
+                >{avatarName}</motion.h5>
+                  <motion.small className='client__review'
+                    initial= {{opacity:0}}
+                    whileInView= {{opacity:1}}
+                    transition= {{duration:1.5}}
+                    viewport= {{once:true}}
+                  >
                     {rewiev}
-                  </small>
+                  </motion.small>
               </SwiperSlide>
             )
           })

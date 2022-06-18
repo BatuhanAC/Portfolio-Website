@@ -1,88 +1,93 @@
 import React from 'react'
 import './Services.css'
 import {BiCheck} from 'react-icons/bi'
+import { motion } from 'framer-motion'
+
 const Services = () => {
   return (
     <section id='services'>
-      <h5>What I Offer</h5>
-      <h2>Services</h2>
+      <motion.h5
+        initial= {{opacity:0}}
+        whileInView= {{opacity:1}}
+        transition= {{duration:1.5}}
+        viewport= {{once:true}}
+      >Neleri vaad ediyorum?</motion.h5>
+      <motion.h2
+        initial= {{opacity:0}}
+        whileInView= {{opacity:1}}
+        transition= {{duration:1.5, delay:0.5}}
+        viewport= {{once:true}}
+      >Servisler</motion.h2>
       
-      <div className='container services__container'>
+      <motion.div className='container services__container'
+        initial= {{rotateX:90, opacity:0}}
+        whileInView= {{rotateX:0, opacity:1}}
+        transition= {{duration:1}}
+        viewport= {{once:true}}
+      >
         <article className='service'>
           <div className='service__head'>
-            <h3>UI/UX Design</h3>
+            <h3>UI/UX Dizaynı</h3>
           </div>
 
           <ul className='service__list'>
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Her ekran boyutuna uygun bileşenler</p>
             </li>
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>İsteğe bağlı, çeşitli animasyonlar </p>
             </li>
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Basit ve anlaşılır, kullanıcı dostu dizayn</p>
             </li>
           </ul>
         </article>
 
         <article className='service'>
           <div className='service__head'>
-            <h3>Web Development</h3>
+            <h3>Web Servisleri</h3>
           </div>
 
           <ul className='service__list'>
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Hazır email şablonlarıyla iletişim</p>
             </li>
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Gerçek kullanıcı testleri</p>
             </li>
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Site içi admin paneli</p>
             </li>
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Veritabanı ve sunucu ayarlamaları</p>
             </li>
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Reklam hizmetleri</p>
             </li>
           </ul>
         </article>
 
         <article className='service'>
           <div className='service__head'>
-            <h3>Content Creation</h3>
+            <h3>İçerik Servisleri</h3>
           </div>
 
           <ul className='service__list'>
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Frontent yazılımcılığı üzerine içerik üretimi</p>
             </li>
           </ul>
         </article>
-      </div>
+      </motion.div>
     </section>
   )
 }

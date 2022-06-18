@@ -19,10 +19,10 @@
 }
 
 .about__me-image {
-    border-radius: 2rem;
     overflow: hidden;
     transform: rotate(10deg);
     transition: var(--transition);
+    padding: 2rem 2rem 4rem 3rem ;
 }
 
 .about__me-image:hover {
@@ -41,14 +41,9 @@
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
-    transition: var(--transition);
 }
 
-.about__card:hover {
-    background: transparent;
-    border-color: var(--color-bg-variant);
-    cursor: default;
-}
+
 
 .about__icon {
     color: var(--color-primary);
