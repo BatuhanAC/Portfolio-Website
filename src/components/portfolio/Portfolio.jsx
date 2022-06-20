@@ -20,7 +20,7 @@ const data = [
     image: Gunluk,
     title:'Günlük Tutma Sitesi',
     github: 'https://github.com/BatuhanAC/Diary-Website-To-Learn-Extra',
-    demo: null
+    demo: 'https://batuhanacar.net'
   },
   {
     id:3,
